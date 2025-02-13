@@ -24,9 +24,13 @@ process.nextTick(() => {
 
 
 async function Test(req, res){
-    let output = await print();
-        if (output.err) console.log("error");
-        else  console.log(output);
+    try{
+        const output = await print();
+        console.log(output);
+    }
+    catch (err){
+        console.log(err.message);
+    }
 }
 const print = ()=>{
     return ("Async/Await Called"); 
