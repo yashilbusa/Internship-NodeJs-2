@@ -13,7 +13,7 @@ const fs = require('fs/promises');
 
 
 const promise = new Promise((resolve,reject)=>{
-    const res = "This is For Promise Error Handling";
+    const res = "This is For Error Handling Using Promise";
     fs.writeFile('test.txt', res);
     resolve("File Writing Successfully");
     reject();
