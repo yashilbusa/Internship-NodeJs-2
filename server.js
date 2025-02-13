@@ -23,13 +23,4 @@ http.createServer((req,res)=>{
 });
 
 
-/* 
 
-Today I learned event loop and also revise the callbacks,promises and async/await. then i learn 
-to create http server, handle the different routes, and also done the try/catch blocks and now trying to 
-understand how the debugger work in node js and it's  c,n,s,o and pause methods with command line. and in tasks i
-learn how all event loop works with process.nextTick(), then create http server and also done different routes 
-and also done last two tasks.
-
-
-*/
