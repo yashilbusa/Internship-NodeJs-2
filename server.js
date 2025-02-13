@@ -1,10 +1,11 @@
 const http = require('http');
 const port = 4000;
 
-http.createServer((req,res)=>{    
+http.createServer((req,res)=>{ 
     if(req.url==="/"){
         res.writeHead(200,{'content-type': 'text/html'});
         res.end("Home Page");
+        debugger
     }
     else if(req.url==="/about"){
         res.writeHead(200,{'content-type': 'text/html'});       
