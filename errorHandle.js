@@ -9,13 +9,12 @@ const fs = require('fs/promises');
 //   }
 // }
 // console.log("File Writing Successfully");
-
 // fsPromise();
 
 
 const promise = new Promise((resolve,reject)=>{
     const res = "This is For Promise Error Handling";
-    fs.writeFaaile('test.txt', res);
+    fs.writeFile('test.txt', res);
     resolve("File Writing Successfully");
     reject();
 })
