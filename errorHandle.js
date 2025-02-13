@@ -1,15 +1,15 @@
 const fs = require('fs/promises');
 
-// async function fsPromise() {
-//   try {
-//     const data = "Some data of WriteFile Using Async/Await";
-//     await fs.writeFilse('WriteFilePromise.txt', data);
-//   } catch (err) {
-//     console.log(err.message);
-//   }
-// }
-// console.log("File Writing Successfully");
-// fsPromise();
+async function fsPromise() {
+  try {
+    const data = "Some data of datafile.txt Using Async/Await";
+    await fs.writeFile('data.txt', data);
+  } catch (err) {
+    console.log(err.message);
+  }
+}
+console.log("File Writing Successfully");
+fsPromise();
 
 
 const promise = new Promise((resolve,reject)=>{
