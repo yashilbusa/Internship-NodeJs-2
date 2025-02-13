@@ -16,6 +16,8 @@
 
 
 console.log("Console Log Called");
+console.log("Console Log Called 2nd Time");
+
 
 process.nextTick(() => {
     console.log("process.nextTick Called");
