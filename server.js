@@ -2,6 +2,7 @@ const http = require('http');
 const port = 4000;
 
 http.createServer((req,res)=>{ 
+    const a = 5;
     if(req.url==="/"){
         res.writeHead(200,{'content-type': 'text/html'});
         res.end("Home Page");
